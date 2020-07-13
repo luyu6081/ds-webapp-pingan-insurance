@@ -1,0 +1,4 @@
+# 保存统计标准映射
+mutation dsSaveStatisticallMapping ($input: DsSaveStatisticallMappingInput!) {
+  data: dsSaveStatisticallMapping (input: $input) 
+}

@@ -1,0 +1,4 @@
+# 保存信息项映射信息
+mutation dsSaveAttributeMapping ($input: DsSaveAttributeMappingInput!) {
+  data: dsSaveAttributeMapping (input: $input) 
+}

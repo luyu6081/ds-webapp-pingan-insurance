@@ -1,0 +1,12 @@
+#import "../fragment/mds-object-fragment"
+#import "../fragment/mds-column-fragment"
+
+# 表查询
+query mdsLoadMdsObject($mdsObjectId: ID!, $isRecordPv: Boolean){
+  data: mdsLoadMdsObject(mdsObjectId: $mdsObjectId, isRecordPv: $isRecordPv) {
+    ...MdsObjectFields
+    mdsColumns {
+      ...MdsColumnFields
+    }
+  }
+}

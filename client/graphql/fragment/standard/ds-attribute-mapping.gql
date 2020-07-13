@@ -1,0 +1,28 @@
+#import '../user-fragment'
+
+# 信息项映射
+fragment DsAttributeMappingFields on DsAttributeMapping {
+  id
+  standardId
+  platformName
+  platformId
+  systemName
+  systemId
+  dbName
+  dbId
+  tableName
+  tableId
+  fieldName
+  fieldId
+  ruleNames
+  ruleIds
+  status
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+}

@@ -1,0 +1,8 @@
+#import "../fragment/audit/ds-audit-fragment"
+
+# 获取审核列表
+query dsAudit($id: ID!){
+  data: dsAudit(id: $id) {
+    ...DsAuditFields
+  }
+}

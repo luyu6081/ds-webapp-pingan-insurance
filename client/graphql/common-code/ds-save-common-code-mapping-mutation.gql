@@ -1,0 +1,4 @@
+#  保存代码映射和编码映射信息
+mutation dsSaveCommonCodeMapping ($input: DsSaveCommonCodeMappingIuput!) {
+  data: dsSaveCommonCodeMapping (input: $input) 
+}

@@ -1,0 +1,19 @@
+#import '../user-fragment'
+
+fragment DsCommonCodeValueMappingFields on DsCommonCodeValueMapping {
+  id
+  codeMappingId
+  codeValueId
+  codeValue
+  codeValueName
+  value
+  code
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+}

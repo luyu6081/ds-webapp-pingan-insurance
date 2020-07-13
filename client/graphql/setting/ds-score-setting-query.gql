@@ -1,0 +1,8 @@
+#import '../fragment/setting/ds-score-setting'
+
+# 标准历史详情
+query dsScoreSetting {
+  data: dsScoreSetting {
+    ...DsScoreSettingFields
+  }
+}

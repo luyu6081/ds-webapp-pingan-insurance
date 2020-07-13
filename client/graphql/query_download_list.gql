@@ -1,0 +1,4 @@
+#下载列表
+query dsExportList ($keyWord: String , $fileTypeEnum: DsFileTypeEnum!, $serverTypeEnum: DsServerTypeEnum!) {
+  exportList: dsExportList (keyWord: $keyWord, fileTypeEnum: $fileTypeEnum, serverTypeEnum: $serverTypeEnum)
+}

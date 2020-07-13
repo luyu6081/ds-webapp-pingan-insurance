@@ -1,0 +1,5 @@
+fragment DqsScheduleFields on DqsSchedule {
+  id
+  name
+  desc
+}

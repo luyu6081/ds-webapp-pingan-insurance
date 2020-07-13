@@ -1,0 +1,25 @@
+#import '../user-fragment'
+
+fragment DsInstitutionalFields on DsInstitutional {
+  id
+  pid
+  standardId
+  number
+  enName
+  enAbridge
+  cnName
+  description
+  hot
+  downloads
+  hasChildren
+  status
+  auditStatus
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+}

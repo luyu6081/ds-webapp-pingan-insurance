@@ -1,0 +1,5 @@
+fragment MdsColumnFields on MdsColumn {
+  id
+  name
+  desc
+}

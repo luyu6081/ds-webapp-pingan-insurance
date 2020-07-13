@@ -1,0 +1,4 @@
+#  删除编码映射信息
+mutation dsDelCommonCodeValueMapping ($id: ID!) {
+  data: dsDelCommonCodeValueMapping (id: $id) 
+}

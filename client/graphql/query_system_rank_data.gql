@@ -1,0 +1,23 @@
+# 数据标准专题
+query dsHomeExecutionSystemRanking {
+  systemRanking: dsHomeExecutionSystemRanking {
+    # 排行
+    Ranking
+    # 系统名称
+    systemName
+    # 系统id
+    systemId
+    # 分数
+    grade
+    # 数据波动数值
+    waveNum
+    # 累计信息项
+    infoItemCount
+    # 落地信息项
+    landingInfoItemCount
+    # 标准检查异常数
+    failingStandardCount
+    # 信息项落地率
+    landingInfoItemRank
+  }
+}

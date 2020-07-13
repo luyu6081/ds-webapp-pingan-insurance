@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webapp:
+    build: '.'
+    image: ej/samp-ds-webapp
+    ports:
+      - '10480:80'
+

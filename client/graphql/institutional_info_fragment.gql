@@ -1,0 +1,27 @@
+# 机构清单-增加订阅收藏对象
+fragment DsInstitutionalInfo on DsInstitutionalInfo {
+  # 主键ID
+  id
+  #父节点ID
+  pid
+  # 标准ID
+  standardId
+  # 编号
+  numberId
+  # 中文名称
+  cnName
+  # 英文名称
+  enName
+  # 机构描述
+  description
+  # 英文简写
+  enShorthand
+  # 英文简写编码
+  enShorthandCoding
+  # 是否有子节点
+  hasChildren
+  # 是否收藏
+  isCollect
+  # 是否订阅
+  isSubscribe 
+}

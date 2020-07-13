@@ -1,0 +1,4 @@
+#  保存编码(数据标准管理员)
+mutation dsSaveCommonCodeValue ($input: DsSaveCommonCodeValueIuput!) {
+  data: dsSaveCommonCodeValue (input: $input) 
+}

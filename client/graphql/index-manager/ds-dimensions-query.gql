@@ -1,0 +1,7 @@
+# 获取所有指标维度
+query dsDimensions {
+  data: dsDimensions {
+    id
+    name
+  }
+}

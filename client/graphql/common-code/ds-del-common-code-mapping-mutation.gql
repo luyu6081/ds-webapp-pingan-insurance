@@ -1,0 +1,4 @@
+#  删除代码映射信息
+mutation dsDelCommonCodeMapping ($id: ID!) {
+  data: dsDelCommonCodeMapping (id: $id) 
+}

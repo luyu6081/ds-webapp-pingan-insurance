@@ -1,0 +1,26 @@
+#import '../user-fragment'
+
+fragment DsCommonCodeFields on DsCommonCode {
+  id
+  cnName
+  enName
+  standardId
+  number
+  rule
+  type
+  length
+  downloads
+  hot
+  status
+  description
+  auditStatus
+  systemCount
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+}

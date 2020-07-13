@@ -1,0 +1,4 @@
+# 保存信息项列表 (保存 isAudit=false  提交保存审批 isAudit=true)
+mutation dsSaveAttributes ($inputs: DsSaveAttributesInput!, isAudit: Boolean!) {
+  data: dsSaveAttributes (inputs: $inputs) 
+}

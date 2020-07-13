@@ -1,0 +1,21 @@
+#import '../user-fragment'
+#import './dqsIssue-history-fragment'
+
+fragment DsAuditFields on DsAudit {
+  id
+  name
+  standardType
+  type
+  project
+  auditStatus
+  creator {
+    ...UserFields
+  }
+  createTm
+  content
+  checkStatus
+  description
+  auditHistory {
+    ...DqsIssueHistoryFields
+  }
+}

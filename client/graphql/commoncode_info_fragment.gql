@@ -1,0 +1,22 @@
+fragment DsCommonCode on DsCommonCode {
+  # 主键ID
+  id
+  # 中文名称
+  cnName
+  # 英文名称
+  enName
+  # 标准ID
+  standardId
+  # 编号
+  numberId
+  # 编码规则
+  codingRules
+  # 数据类型
+  dataType
+  # 数据长度
+  dataLength
+  # 业务含义
+  businessDesc
+  # 映射信息
+  systemMapping
+}

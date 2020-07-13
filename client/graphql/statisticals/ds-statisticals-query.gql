@@ -1,0 +1,13 @@
+#import '../fragment/statisticals/ds-statistical-fragment'
+
+# 获取统计标准列表
+query dsStatisticals ($input: DsStatisticalsInput!) {
+  data: dsStatisticals (input: $input) {
+    total
+    offset
+    limit
+    dsStatisticals {
+      ...DsStatisticalFields
+    }
+  }
+}

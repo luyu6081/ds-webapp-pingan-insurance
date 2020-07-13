@@ -1,0 +1,17 @@
+# 最新发布的标准
+query newstStandards {
+  newstStandards: dsHomeNewestStandards {
+    # 主键ID
+    id
+    # 标准名称
+    name
+    # 数据标准分类
+    type
+    # 标准描述
+    description
+    # 访问热度
+    popularity
+    # 下载量
+    downloads
+  }
+}

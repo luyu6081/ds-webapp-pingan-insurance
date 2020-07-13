@@ -1,0 +1,13 @@
+#import "../fragment/audit/ds-audit-fragment"
+
+# 获取审核列表
+query dsAudits($input: DsAuditsInput!){
+  data: dsAudits(input: $input) {
+    total
+    offset
+    limit
+    data {
+      ...DsAuditFields
+    }
+  }
+}

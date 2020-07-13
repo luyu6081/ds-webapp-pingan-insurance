@@ -1,0 +1,8 @@
+#import '../fragment/statisticals/ds-statistical-mapping-fragment'
+
+# 获取统计标准映射列表
+query dsStatisticalMappings ($statisticalId: ID!) {
+  data: dsStatisticalMappings (statisticalId: $statisticalId) {
+    ...DsStatisticalMappingFields
+  }
+}

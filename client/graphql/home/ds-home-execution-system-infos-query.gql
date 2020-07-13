@@ -1,0 +1,13 @@
+#import '../fragment/home/ds-home-execution-systeminfo-fragment'
+
+# 数据标准执行详情
+query dsHomeExecutionSystemInfos ($input: DsHomeExecutionSystemInfosInput!) {
+  data: dsHomeExecutionSystemInfos (input: $input) {
+    total
+    offset
+    limit
+    executionSystemInfos {
+      ...DsHomeExecutionSystemInfoFields
+    }
+  }
+}

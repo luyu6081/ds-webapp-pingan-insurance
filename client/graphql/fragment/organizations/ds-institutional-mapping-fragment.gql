@@ -1,0 +1,13 @@
+
+fragment DsInstitutionalMappingFields on DsInstitutionalMapping {
+  id
+  standardId
+  platformName
+  platformId
+  systemName
+  systemId
+  dbName
+  dbId
+  tableName
+  tableId
+}

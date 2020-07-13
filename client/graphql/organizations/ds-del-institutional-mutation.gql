@@ -1,0 +1,4 @@
+#  删除机构清单数据(数据标准管理员)
+mutation dsDelInstitutional ($id: ID!) {
+  data: dsDelInstitutional (id: $id) 
+}

@@ -1,0 +1,4 @@
+#  启用/禁用公共代码(数据标准管理员)
+mutation dsEnableCommonCodes ($ids: [ID!]!, $status: DsStandardStatus!) {
+  data: dsEnableCommonCodes (ids: $ids, status: $status) 
+}

@@ -1,0 +1,4 @@
+# 更新评分体系库设置
+mutation dsSaveScoreSetting ($input: DsSaveScoreSettingInput!) {
+  data: dsSaveScoreSetting (input: $input) 
+}

@@ -1,0 +1,13 @@
+#import "../../fragment/dqs/dqs-schedule-fragment"
+
+# 获取指定信息项的映射信息列表
+query dqsLoadScheduleList($input: DqsLoadScheduleListInput) {
+  data: dqsLoadScheduleList(input: $input) {
+    total
+    offset
+    limit
+    data {
+      ...DqsScheduleFields
+    }
+  }
+}

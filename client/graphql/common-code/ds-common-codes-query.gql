@@ -1,0 +1,13 @@
+#import '../fragment/common-code/ds-common-code-fragment'
+
+# 获取公共代码列表
+query dsCommonCodes($input: DsCommonCodesInput!){
+  data: dsCommonCodes(input: $input) {
+    total
+    offset
+    limit
+    dsCommonCodeInfos {
+      ...DsCommonCodeFields
+    }
+  }
+}

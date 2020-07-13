@@ -1,0 +1,8 @@
+#import '../fragment/history/ds-history-fragment'
+
+# 标准历史详情
+query dsHistory ($id: ID!) {
+  data: dsHistory (id: $id) {
+    ...DsHistoryFields
+  }
+}

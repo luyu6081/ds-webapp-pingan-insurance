@@ -1,0 +1,4 @@
+#  删除机构清单映射信息
+mutation dsDelInstitutionalMapping ($id: ID!) {
+  data: dsDelInstitutionalMapping (id: $id) 
+}

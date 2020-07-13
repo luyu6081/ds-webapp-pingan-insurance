@@ -1,0 +1,36 @@
+#基础标准-信息项内容及映射
+query basicStandardValue ($id: ID!) {
+  basicStandardValue: dsGetBasicStandardValueInfo (id: $id) {
+    # 主键编号
+    id 
+    # 标准ID
+    standardId 
+    # 标准名称
+    name 
+    # 数据类型
+    dataType 
+    # 数据长度
+    dataLength 
+    # 数据管理员
+    dataManager 
+    #数据描述
+    dataDescribe 
+    # 基础标准内容映射信息
+    mappingInfo: dsDataStandardMappings {
+      # 主键ID
+      id 
+      # 标准ID
+      standardId
+      # 映射信息系统
+      infomationSystem
+      # 映射信息表
+      infomationTable
+      # 映射信息字段
+      infomationField
+      #  数据管理员
+      dataManager
+      # 标准名称
+      standardName
+    }
+  }
+}

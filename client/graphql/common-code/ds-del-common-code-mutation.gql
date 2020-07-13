@@ -1,0 +1,4 @@
+#  删除公共代码(数据标准管理员)
+mutation dsDelCommonCode ($id: ID!) {
+  data: dsDelCommonCode (id: $id) 
+}

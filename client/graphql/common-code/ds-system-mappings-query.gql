@@ -1,0 +1,8 @@
+#import '../fragment/common-code/ds-system-mapping-fragment'
+
+# 获取公共代码系统映射导航数据
+query dsSystemMappings($codeId: ID!){
+  data: dsSystemMappings(codeId: $codeId) {
+    ...DsSystemMappingFields
+  }
+}

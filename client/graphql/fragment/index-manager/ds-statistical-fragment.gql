@@ -1,0 +1,61 @@
+#import '../user-fragment'
+
+fragment DsStatistical1Fields on DsStatistical {
+  id
+  standardId
+  cnName
+  enName
+  manageDepartmentId
+  manageDepartmentName
+  manager {
+    ...UserFields
+  }
+  definition
+  rule
+  reference
+  unit
+  frequency
+  arrangement
+  mappingType
+  processingLogic
+  statisticalTime
+  dimensions {
+    id
+    name
+  }
+  dataType
+  platformName
+  platformId
+  systemName
+  systemId
+  dbName
+  dbId
+  dataTableId
+  dataTableName
+  dataColumnId
+  dataColumnName
+  codeRule
+  proposeDepartmentId
+  proposeDepartmentName
+  presenter {
+    ...UserFields
+  }
+  applyDepartmentId
+  applyDepartmentName
+  applyUser {
+    ...UserFields
+  }
+  status
+  hot
+  downloads
+  version
+  auditStatus
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+}

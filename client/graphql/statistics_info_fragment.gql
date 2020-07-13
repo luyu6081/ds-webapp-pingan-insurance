@@ -1,0 +1,20 @@
+#statistics_info_fragment.gql
+
+fragment DsStatisticalStandardInfo on DsStatisticalStandardInfo {
+  # 主键ID
+  id 
+  # 中文名称
+  cnName
+  # 英文名称
+  enName
+  # 统计口径
+  content
+  # 编号ID
+  numberId
+  # 标准ID
+  standardId
+  # 是否收藏
+  isCollect
+  # 是否订阅
+  isSubscribe
+}

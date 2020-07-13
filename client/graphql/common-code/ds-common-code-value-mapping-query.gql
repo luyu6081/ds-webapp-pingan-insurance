@@ -1,0 +1,8 @@
+#import '../fragment/common-code/ds-common-code-value-mapping-fragment'
+
+# 获取指定公共代码编码映射信息
+query dsCommonCodeValueMapping($id: ID!){
+  data: dsCommonCodeValueMapping(id: $id) {
+    ...DsCommonCodeValueMappingFields
+  }
+}

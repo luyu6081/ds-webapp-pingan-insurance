@@ -1,0 +1,4 @@
+# 删除指标分类
+mutation dsDelIndexClassification ($id: ID!) {
+  data: dsDelIndexClassification (id: $id) 
+}

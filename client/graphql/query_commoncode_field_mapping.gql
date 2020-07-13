@@ -1,0 +1,26 @@
+#公共代码 代码映射
+query commonCodeFieldMapping ($id: ID!) {
+  commonCodeFieldMapping: dsGetCommonFieldMappingValues (id: $id) {
+    # 主键ID
+    id
+    # 系统名称
+    systemName
+    # 数据库名
+    dbName
+    # 数据表名
+    tabName
+    # 表字段名称
+    fieldName
+    # 表字段系统映射值数据
+    mappingValues: dsCommonFieldMappingValues {
+      # 主键ID
+      id
+      # 标准名称
+      standardName
+      # 标准编码
+      standardCoding
+      # 系统编码
+      systemCoding
+    }
+  }
+}

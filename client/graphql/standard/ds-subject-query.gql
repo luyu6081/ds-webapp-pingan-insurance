@@ -1,0 +1,8 @@
+#import "../fragment/standard/ds-subject"
+
+#基础标准项详情
+query dsSubject($id: ID!) {
+  data: dsSubject(id: $id) {
+    ...DsSubjectFields
+  }
+}

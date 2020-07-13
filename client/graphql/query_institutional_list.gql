@@ -1,0 +1,13 @@
+#import "./institutional_fragment.gql"
+
+#机构清单列表 
+query institutionalList ($input: DsListInstitutionalsInput!) {
+  institutionalData: dsListInstitutionals (input: $input) {
+    total
+    offset
+    limit
+    institutionals: dsInstitutionalInfos {
+      ...DsInstitutional
+    }
+  }
+}

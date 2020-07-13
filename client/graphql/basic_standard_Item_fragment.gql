@@ -1,0 +1,10 @@
+fragment DsBasicStandardItem on DsBasicStandardItem {
+  # 主键编号
+  id 
+  # 父节点
+  pid
+  # 名称
+  name 
+  # 代码
+  code
+}

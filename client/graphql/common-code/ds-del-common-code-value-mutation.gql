@@ -1,0 +1,4 @@
+#  删除编码(数据标准管理员)
+mutation dsDelCommonCodeValue ($id: ID!) {
+  data: dsDelCommonCodeValue (id: $id) 
+}

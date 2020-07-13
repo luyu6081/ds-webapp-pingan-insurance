@@ -1,0 +1,7 @@
+fragment DsScoreSetFields on DsScoreSet {
+  startProportion
+  endProportion
+  score
+  createTm
+  modifyTm
+}

@@ -1,0 +1,8 @@
+#import '../fragment/setting/ds-standard-score-item'
+
+# 查看标准评分列表
+query dsStandardScoreHistorys ($objectId: ID!){
+  data: dsStandardScoreHistorys (objectId: $objectId){
+    ...DsStandardScoreItemFields
+  }
+}

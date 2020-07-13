@@ -1,0 +1,15 @@
+fragment DsHomeExecutionSystemInfoFields on DsHomeExecutionSystemInfo {
+  id
+  platformId
+  platformName
+  systemId
+  systemName
+  dbName
+  dbId
+  tableCount
+  createTm
+  mappingTotal
+  mappingCount
+  ruleCount
+  errorMapping
+}

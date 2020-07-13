@@ -1,0 +1,4 @@
+# 删除基础标准项
+mutation dsDelSubject ($id: ID!) {
+  data: dsDelSubject (id: $id) 
+}

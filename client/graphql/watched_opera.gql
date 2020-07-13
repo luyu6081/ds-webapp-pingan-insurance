@@ -1,0 +1,3 @@
+mutation watchedOpera ($dsObjectId: ID!, $title: String!, $isOperations: Boolean!, $type: DsStandardType!) {
+  watchedOpera: dsSubscribeDsObject (dsObjectId: $dsObjectId, title: $title, isOperations: $isOperations, type: $type) 
+}

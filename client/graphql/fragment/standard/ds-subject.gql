@@ -1,0 +1,26 @@
+#import '../user-fragment'
+
+fragment DsSubjectFields on DsSubject {
+  id
+  pid
+  cnName
+  enName
+  standardId
+  anName
+  number
+  description
+  status
+  type
+  hot
+  downloads
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  version
+  auditStatus
+  createTm
+  modifyTm
+}

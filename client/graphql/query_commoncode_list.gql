@@ -1,0 +1,13 @@
+#import "./commoncode_info_fragment.gql"
+
+#公共代码列表
+query commonCodesList ($input: DsListCommonCodesInput) {
+  commonCodesList: dsListCommonCodes (input: $input) {
+    total,
+    offset,
+    limit,
+    commonCodeInfos: dsCommonCodeInfos {
+      ...DsCommonCode
+    }
+  }
+}

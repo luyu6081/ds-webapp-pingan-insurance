@@ -1,0 +1,4 @@
+ # 禁用/启用信息项
+mutation dsEnableAttribute ($id: ID!, $status: DsStandardStatus!) {
+  data: dsEnableAttribute (id: $id, status: $status) 
+}

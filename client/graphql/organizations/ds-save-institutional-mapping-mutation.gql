@@ -1,0 +1,4 @@
+#  保存机构清单映射信息
+mutation dsSaveInstitutionalMapping ($input: DsSaveInstitutionalMappingInput!) {
+  data: dsSaveInstitutionalMapping (input: $input) 
+}

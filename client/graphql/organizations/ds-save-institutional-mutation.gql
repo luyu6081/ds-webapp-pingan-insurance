@@ -1,0 +1,4 @@
+#  保存机构清单数据 (数据标准管理员)
+mutation dsSaveInstitutional ($input: DsSaveInstitutionalInput!) {
+  data: dsSaveInstitutional (input: $input) 
+}

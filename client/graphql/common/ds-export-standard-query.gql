@@ -1,0 +1,4 @@
+# 数据导出(指定数据导出)
+query dsExportStandard($type: DsStandardType!, $ids: [ID!]!) {
+  data: dsExportStandard(type: $type, ids: $ids)
+}

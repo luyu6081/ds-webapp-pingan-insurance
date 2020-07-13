@@ -1,0 +1,13 @@
+#import '../fragment/index-manager/ds-statistical-fragment'
+
+# 获取指标列表
+query dsStatisticals ($input:DsStatisticalsInput! ) {
+  data: dsStatisticals (input: $input){
+    total
+    offset
+    limit
+    dsStatisticals {
+      ...DsStatistical1Fields
+    }
+  }
+}

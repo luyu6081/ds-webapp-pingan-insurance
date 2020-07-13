@@ -1,0 +1,4 @@
+# 保存指标
+mutation dsSaveStatistical ($input: DsSaveStatisticalInput!) {
+  data: dsSaveStatistical (input: $input) 
+}

@@ -1,0 +1,4 @@
+# 保存基础标准项
+mutation dsSaveSubject ($input: DsSaveSubjectInput!) {
+  data: dsSaveSubject (input: $input) 
+}

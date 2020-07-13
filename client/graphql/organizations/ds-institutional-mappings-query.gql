@@ -1,0 +1,8 @@
+#import '../fragment/organizations/ds-institutional-mapping-fragment'
+
+# 获取机构清单映射信息列表
+query dsInstitutionalMappings ($institutionalId: ID!, $keyWord: String) {
+  data: dsInstitutionalMappings (institutionalId: $institutionalId, keyWord: $keyWord) {
+    ...DsInstitutionalMappingFields
+  }
+}

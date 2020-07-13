@@ -1,0 +1,8 @@
+#import "./commoncode_detail_info_fragment.gql"
+
+#公共代码内容详情
+query commonCodeValues ($id: ID!) {
+  commonCodeValues: dsListCommonCodeValues (id: $id) {
+    ...DsCommonCodeInfo
+  }
+}

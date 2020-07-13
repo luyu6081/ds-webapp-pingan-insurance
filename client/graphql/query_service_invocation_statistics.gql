@@ -1,0 +1,13 @@
+# 主数据服务调用统计
+query dsHomeServiceInvocationStatistics {
+  serviceInvocationStatistics: dsHomeServiceInvocationStatistics {
+    # 数据标准主数据类型
+    standardType
+    # 查询数
+    selectNum
+    # 新增数
+    addNum
+    # 更新数
+    updateNum 
+  }
+}

@@ -1,0 +1,8 @@
+#import '../fragment/organizations/ds-institutional-fragment'
+
+# 获取机构清单详情
+query dsInstitutional ($id: ID!) {
+  data: dsInstitutional (id: $id) {
+    ...DsInstitutionalFields
+  }
+}

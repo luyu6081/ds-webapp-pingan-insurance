@@ -1,0 +1,8 @@
+# 指标分类
+query dsIndexClassification {
+  data: dsIndexClassification {
+    id
+    pid
+    name
+  }
+}

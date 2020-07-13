@@ -1,0 +1,4 @@
+# 删除信息项
+mutation dsDelAttribute ($id: ID!) {
+  data: dsDelAttribute (id: $id) 
+}

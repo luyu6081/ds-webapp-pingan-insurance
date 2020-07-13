@@ -1,0 +1,8 @@
+#import "./statistics_info_fragment.gql"
+
+#统计标准详情
+query statisticsDetail ($id: ID!) {
+  statDetail: dsGetStatisticalStandardInfo (id: $id) {
+    ...DsStatisticalStandardInfo
+  }
+}

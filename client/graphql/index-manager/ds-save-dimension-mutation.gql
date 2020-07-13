@@ -1,0 +1,4 @@
+# 保存指标维度
+mutation dsSaveDimension ($input: DsSaveDimensionInput) {
+  data: dsSaveDimension (input: $input) 
+}

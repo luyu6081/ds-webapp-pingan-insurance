@@ -1,0 +1,4 @@
+# 模板下载
+query dsExportTemplate($type: DsStandardType!){
+  data: dsExportTemplate(type: $type)
+}

@@ -1,0 +1,14 @@
+query organizationList ($input: AuthOrganizationParamInput!) {
+  data: selectAllOrganization (input: $input) {
+    organizationId
+    parentId
+    organizationName
+    organizationCode
+    organizationNumber
+    organizationAddress
+    username
+    managerName
+    managerPhone
+    managerMail
+  }
+}

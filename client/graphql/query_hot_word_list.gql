@@ -1,0 +1,9 @@
+# 检索热词
+query dsHomeGetHotWords {
+  homeHotWords: dsHomeGetHotWords {
+    # 热词
+    name: word
+    # 检索次数
+    value: searches
+  }
+}

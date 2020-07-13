@@ -1,0 +1,8 @@
+#import "./institutional_info_fragment.gql"
+
+#机构清单详情
+query institutionalDetail ($id: ID!) {
+  institutionalDetail: dsGetInstitutionalInfo (id: $id) {
+    ...DsInstitutionalInfo
+  }
+}

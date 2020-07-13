@@ -1,0 +1,11 @@
+# 统计信息项数据
+query statInfoItem {
+  statInfoItem: dsHomeStatisticalInformationItem {
+    # 累计信息项
+    infoItemCount
+    # 落地信息项
+    landingInfoItemCount
+    # 标准检查异常数
+    failingStandardCount
+  }
+}

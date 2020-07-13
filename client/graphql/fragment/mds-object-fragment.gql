@@ -1,0 +1,5 @@
+fragment MdsObjectFields on MdsObject {
+  id
+  name
+  chineseName
+}

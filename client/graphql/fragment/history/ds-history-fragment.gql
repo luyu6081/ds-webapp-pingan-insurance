@@ -1,0 +1,16 @@
+#import '../user-fragment'
+
+fragment DsHistoryFields on DsHistory {
+  id
+  standardId
+  name
+  version
+  creator {
+    ...UserFields
+  }
+  approver {
+    ...UserFields
+  }
+  createTm
+  content
+}

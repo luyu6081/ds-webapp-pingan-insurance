@@ -1,0 +1,4 @@
+# 保存统计标准（数据标准管理员）
+mutation dsSaveStatistical ($input: DsSaveStatisticalInput!) {
+  data: dsSaveStatistical (input: $input) 
+}

@@ -1,0 +1,8 @@
+#import "../fragment/standard/ds-attribute-mapping"
+
+# 获取指定信息项的映射信息列表
+query dsAttributeMappings($attributeId: ID!) {
+  data: dsAttributeMappings(attributeId: $attributeId) {
+    ...DsAttributeMappingFields
+  }
+}

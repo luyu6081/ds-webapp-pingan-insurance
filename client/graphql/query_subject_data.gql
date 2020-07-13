@@ -1,0 +1,4 @@
+# 数据标准专题
+query dsHomeStandardTheme {
+  subjectData: dsHomeStandardTheme
+}

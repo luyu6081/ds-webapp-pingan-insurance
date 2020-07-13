@@ -1,0 +1,4 @@
+# 数据导出(全部数据导出)
+query dsExportStandardAll($type: DsStandardType!) {
+  data: dsExportStandardAll(type: $type)
+}

@@ -1,0 +1,8 @@
+#import '../fragment/setting/ds-standard-score-item'
+
+# 查看指定标准评分项详情
+query dsStandardScoreItem($id: ID!) {
+  data: dsStandardScoreItem (id: $id) {
+    ...DsStandardScoreItemFields
+  }
+}

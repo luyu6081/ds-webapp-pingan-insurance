@@ -1,0 +1,13 @@
+#import "./statistics_fragment.gql"
+
+#统计标准列表
+query statisticsList ($input: DsListStatisticalStandardsInput) {
+  statisticsList: dsListStatisticalStandards (input: $input) {
+    total,
+    offset,
+    limit,
+    statistics: dsStatisticalStandardInfos {
+      ...DsStatisticalStandard
+    }
+  }
+}

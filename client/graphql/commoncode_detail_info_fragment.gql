@@ -1,0 +1,32 @@
+#import "./commoncode_value_fragment.gql"
+
+fragment DsCommonCodeInfo on DsCommonCodeInfo {
+  # 主键ID
+  id
+  # 中文名称
+  cnName
+  # 英文名称
+  enName
+  # 标准ID
+  standardId
+  # 编号
+  numberId
+  # 编码规则
+  codingRules
+  # 数据类型
+  dataType
+  # 数据长度
+  dataLength
+  # 业务含义
+  businessDesc
+  # 映射信息
+  systemMapping
+  # 是否收藏
+  isCollect
+  # 是否订阅
+  isSubscribe
+  # 公共代码内容数据
+  commonCodeValueInfo: dsCommonCodeValueInfos{
+    ...DsCommonCodeValue
+  }
+}

@@ -1,0 +1,7 @@
+# 是否收藏或订阅
+query dsIsCollectSubscribe($id: ID!, $type: DsStandardType!) {
+  data: dsIsCollectSubscribe(id: $id, type: $type) {
+    isCollect
+    isSubscribe
+  }
+}

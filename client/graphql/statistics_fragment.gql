@@ -1,0 +1,16 @@
+#statistics_fragment.gql
+
+fragment DsStatisticalStandard on DsStatisticalStandard {
+  # 主键ID
+  id 
+  # 中文名称
+  cnName
+  # 英文名称
+  enName
+  # 统计口径
+  content
+  # 编号ID
+  numberId
+  # 标准ID
+  standardId
+}

@@ -1,0 +1,4 @@
+fragment DsSystemMappingFields on DsSystemMapping {
+  id
+  name
+}

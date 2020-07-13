@@ -1,0 +1,13 @@
+#import "../fragment/mds-object-fragment"
+
+# 表查询
+query mdsSearch($input: MdsSearchQueryInput){
+  data: mdsSearch(input: $input) {
+    total
+    offset
+    size
+    data {
+      ...MdsObjectFields
+    }
+  }
+}

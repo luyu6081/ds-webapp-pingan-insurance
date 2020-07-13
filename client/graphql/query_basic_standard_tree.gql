@@ -1,0 +1,10 @@
+#import "./basic_standard_Item_fragment.gql"
+
+#基础标准-左侧tree
+query basicStandardTree {
+  basicStandardTree: dsInitBasicStandardItems {
+    dsBasicStandardItems {
+      ...DsBasicStandardItem
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# 用户等录
+query getUserinfo {
+  data: getLoginUser {
+    userId
+    name: username
+    avatar: userAvatar
+  }
+}

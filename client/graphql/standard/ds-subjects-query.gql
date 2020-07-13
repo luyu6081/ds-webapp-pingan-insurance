@@ -1,0 +1,8 @@
+#import "../fragment/standard/ds-subject"
+
+#所有基础标准项列表（平行结构）
+query dsSubjects {
+  data: dsSubjects {
+    ...DsSubjectFields
+  }
+}

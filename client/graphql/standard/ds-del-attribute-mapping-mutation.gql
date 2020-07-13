@@ -1,0 +1,4 @@
+# 删除信息项映射信息
+mutation dsDelAttributeMapping ($id: ID!) {
+  data: dsDelAttributeMapping (id: $id) 
+}

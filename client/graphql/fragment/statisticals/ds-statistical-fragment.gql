@@ -1,0 +1,36 @@
+#import '../user-fragment'
+
+fragment DsStatisticalFields on DsStatistical {
+  id
+  cnName
+  enName
+  number
+  standardId
+  type
+  cycle
+  status
+  unit
+  rule
+  dimension
+  accuracy
+  description
+  formula
+  caliber
+  establishment
+  auditStatus
+  version
+  hot
+  downloads
+  department
+  manager {
+    ...UserFields
+  }
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+}

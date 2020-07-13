@@ -1,0 +1,8 @@
+#import '../fragment/statisticals/ds-statistical-fragment'
+
+# 获取统计标准详情
+query dsStatistical ($id: ID!) {
+  data: dsStatistical (id: $id) {
+    ...DsStatisticalFields
+  }
+}

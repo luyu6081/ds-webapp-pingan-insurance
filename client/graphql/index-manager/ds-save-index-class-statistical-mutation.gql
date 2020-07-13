@@ -1,0 +1,4 @@
+# 保存指标分类
+mutation dsSaveIndexClassification ($input: DsSaveIndexClassificationInput!) {
+  data: dsSaveIndexClassification (input: $input) 
+}

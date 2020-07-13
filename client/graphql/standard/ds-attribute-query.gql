@@ -1,0 +1,8 @@
+#import "../fragment/standard/ds-attribute"
+
+# 获取指定信息项内容
+query dsAttribute($id: ID!) {
+  data: dsAttribute(id: $id) {
+    ...DsAttributeFields
+  }
+}

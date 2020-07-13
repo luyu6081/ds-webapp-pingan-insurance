@@ -1,0 +1,14 @@
+#基础标准-信息项
+query basicStandardInfo ($id: ID!) {
+  basicStandardInfo: dsGetBasicStandardInfo (id: $id) {
+    id,
+    nodePath,
+    description,
+    isCollect,
+    isSubscribe,
+    itemInfo: dsbasicStandardValueInfos {
+      id,
+      name,
+    }
+  }
+}

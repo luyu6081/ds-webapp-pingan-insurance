@@ -1,0 +1,4 @@
+# 启用/禁用统计标准（数据标准管理员）
+mutation dsEnableStatistical ($id: ID! , $status: DsStandardStatus!) {
+  data: dsEnableStatistical (id: $id, status: $status) 
+}

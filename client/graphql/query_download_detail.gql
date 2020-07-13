@@ -1,0 +1,4 @@
+#下载详情
+query dsExportInfo ($id: ID!, $fileTypeEnum: DsFileTypeEnum!, $serverInfoTypeEnum: DsServerInfoTypeEnum!) {
+  exportInfo: dsExportInfo (id: $id, fileTypeEnum: $fileTypeEnum, serverInfoTypeEnum: $serverInfoTypeEnum)
+}

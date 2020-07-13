@@ -1,0 +1,4 @@
+# 删除指标维度
+mutation dsDelDimension ($id: ID!) {
+  data: dsDelDimension (id: $id) 
+}

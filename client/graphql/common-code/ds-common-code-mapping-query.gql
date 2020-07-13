@@ -1,0 +1,8 @@
+#import '../fragment/common-code/ds-common-code-mapping-fragment'
+
+# 获取指定公共代码系统映射数据
+query dsCommonCodeMapping($id: ID!){
+  data: dsCommonCodeMapping(id: $id) {
+    ...DsCommonCodeMappingFields
+  }
+}

@@ -1,0 +1,15 @@
+# 公共代码分类
+query commonCodeClassifications {
+  commonCodeClassifications: dsHomeCommonCodeClassifications {
+    # 主键ID
+    id
+    # 分类名称
+    name
+    # 分类描述
+    description
+    # 访问热度
+    popularity
+    # 下载量
+    downloads
+  }
+}

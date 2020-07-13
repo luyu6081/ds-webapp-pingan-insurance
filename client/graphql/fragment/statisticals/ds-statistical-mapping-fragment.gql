@@ -1,0 +1,27 @@
+#import '../user-fragment'
+
+fragment DsStatisticalMappingFields on DsStatisticalMapping {
+  id
+  standardId
+  platformName
+  platformId
+  systemName
+  systemId
+  dbName
+  dbId
+  tableName
+  tableId
+  fieldId
+  fieldName
+  ruleIds
+  ruleNames
+  status
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+}

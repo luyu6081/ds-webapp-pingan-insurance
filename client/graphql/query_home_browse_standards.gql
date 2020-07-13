@@ -1,0 +1,15 @@
+# 最近浏览的标准
+query browseStandards {
+  browseStandards: dsHomeRecentBrowsingStandards {
+    # 主键ID
+    id
+    # 数据标准类型
+    standardType
+    # 标准名称
+    name
+    # 标准描述
+    description
+    # 访问热度
+    popularity
+  }
+}

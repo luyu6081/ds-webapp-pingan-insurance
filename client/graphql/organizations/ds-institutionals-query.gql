@@ -1,0 +1,13 @@
+#import '../fragment/organizations/ds-institutional-fragment'
+
+# 获取机构清单列表 注： 默认只显示一级菜单
+query dsInstitutionals ($input: DsInstitutionalsInput!) {
+  data: dsInstitutionals (input: $input) {
+    total
+    offset
+    limit
+    dsInstitutionals {
+      ...DsInstitutionalFields
+    }
+  }
+}

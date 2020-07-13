@@ -1,0 +1,34 @@
+fragment DsStandardScoreItemFields on DsStandardScoreItem {
+  id
+  objectId
+  name
+  score
+  ranking
+  changRanking
+  errorScore
+  errorRate
+  completeScore
+  completeRate
+  mappingNumber
+  checkErrorNumber
+  checkCorrectNumber
+  checkAlarmNumber
+  createTm
+  platformScores {
+    id
+    objectId
+    name
+    score
+    ranking
+    changRanking
+    errorScore
+    errorRate
+    completeScore
+    completeRate
+    mappingNumber
+    checkErrorNumber
+    checkCorrectNumber
+    checkAlarmNumber
+    createTm
+  }
+}

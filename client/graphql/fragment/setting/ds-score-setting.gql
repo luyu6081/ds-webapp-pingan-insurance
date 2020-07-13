@@ -1,0 +1,10 @@
+#import './ds-score-set'
+
+fragment DsScoreSettingFields on DsScoreSetting {
+  completeScoreSettings {
+    ...DsScoreSetFields
+  }
+  errorScoreSettings {
+    ...DsScoreSetFields
+  }
+}

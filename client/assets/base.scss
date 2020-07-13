@@ -1,0 +1,25 @@
+@tailwind base;
+
+html, body {
+  @apply h-screen font-sans antialiased;
+
+  font-size: 14px;
+}
+
+svg {
+  @apply fill-current;
+}
+
+.tree-dropdown-menu {
+
+  .el-dropdown-menu {
+    &__item {
+      @apply text-gray-darker;
+
+      &:not(.is-disabled):hover {
+        @apply bg-transparent text-blue;
+      }
+    }
+  }
+}
+@tailwind utilities;

@@ -1,0 +1,9 @@
+#公共代码-获取代码中文名称
+query commonCodeCnName ($id: ID!) {
+  commonCodeCnName: dsListCommonCodeValues (id: $id) {
+    # 主键ID
+    id
+    # 中文名称
+    cnName
+  }
+}

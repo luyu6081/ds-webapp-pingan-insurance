@@ -1,0 +1,14 @@
+#import '../user-fragment'
+
+fragment DqsIssueHistoryFields on DqsIssueHistory {
+  name
+  operation
+  transact {
+    ...UserFields
+  }
+  startDate
+  endDate
+  durationInMillis
+  opinion
+  handleStateEnum
+}

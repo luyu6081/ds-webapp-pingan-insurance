@@ -1,0 +1,4 @@
+# 提交审核 （数据标准管理员）(注：title 为标准名称)
+mutation dsSubmitAudit ($title: String!,  $id: ID!, $type: DsStandardType!, $operation: DsOperationType!) {
+  data: dsSubmitAudit (title: $title, id: $id, type: $type, operation: $operation) 
+}

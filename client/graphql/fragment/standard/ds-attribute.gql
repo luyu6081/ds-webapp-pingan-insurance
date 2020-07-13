@@ -1,0 +1,37 @@
+#import '../user-fragment'
+#import '../common-code/ds-common-code-fragment'
+
+fragment DsAttributeFields on DsAttribute {
+  id
+  standardId
+  cnName
+  enName
+  status
+  type
+  description
+  department
+  indicia
+  unit
+  manager {
+    ...UserFields
+  }
+  accord
+  principle
+  dataType
+  dataLength
+  level
+  canEmpty
+  access
+  establishTm
+  creator {
+    ...UserFields
+  }
+  modifier {
+    ...UserFields
+  }
+  createTm
+  modifyTm
+  commonCode {
+    ...DsCommonCodeFields
+  }
+}

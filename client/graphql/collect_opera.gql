@@ -1,0 +1,3 @@
+mutation collectOpera ($dsObjectId: ID! $title: String!, $isOperations: Boolean!, $type: DsStandardType!) {
+  collectOpera: dsCollectDsObject (dsObjectId: $dsObjectId, title: $title, isOperations: $isOperations, type: $type) 
+}

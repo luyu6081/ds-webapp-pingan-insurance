@@ -1,0 +1,13 @@
+#import '../fragment/history/ds-history-fragment'
+
+# 标准历史查询
+query dsHistorys ($input: DsHistoryInput!) {
+  data: dsHistorys (input: $input) {
+    total
+    offset
+    limit
+    dsHistorys {
+      ...DsHistoryFields
+    }
+  }
+}

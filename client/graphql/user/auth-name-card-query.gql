@@ -1,0 +1,7 @@
+query authSelectUserByNameOrCard ($input: AuthUserParamInput) {
+  data: authSelectUserByNameOrCard (input: $input) {
+    userId
+    name
+    jobNumber
+  }
+}

@@ -1,0 +1,8 @@
+#import "../fragment/organizations/ds-institutional-fragment"
+
+#机构清单子节点数据
+query institutionalChildList ($id: ID!, $keyWord: String) {
+  data: dsSubnodeInstitutionals (id: $id, keyWord: $keyWord) {
+    ...DsInstitutionalFields
+  }
+}

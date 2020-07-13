@@ -1,0 +1,4 @@
+# 提交审批 保存信息项
+mutation dsSaveAttribute ($input: DsSaveAttributeInput!) {
+  data: dsSaveAttribute (input: $input) 
+}

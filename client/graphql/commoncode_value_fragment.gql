@@ -1,0 +1,16 @@
+fragment DsCommonCodeValue on DsCommonCodeValue {
+  # 主键编号
+  id
+  # 代码ID
+  codeId
+  # 编码
+  codeValue
+  # 中文名称
+  cnName
+  # 英文名称
+  enName
+  # 业务含义
+  bussinessDesc
+  # 数据管理员
+  dataAdmin
+}

@@ -1,0 +1,8 @@
+#import '../fragment/common-code/ds-common-code-fragment'
+
+# 获取公共代码详情
+query dsCommonCode($id: ID!){
+  data: dsCommonCode(id: $id) {
+    ...DsCommonCodeFields
+  }
+}

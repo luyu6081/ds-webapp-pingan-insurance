@@ -1,0 +1,4 @@
+# 文件提交审核 （数据标准管理员） (注： file 调取文件服务器上传文件接口 返回的下载路径)
+mutation dsFileSubmitAudit ($fileName: String!, $type: DsStandardType! , $deal: DsFileDealType!, $file: String!) {
+  data: dsFileSubmitAudit (fileName: $fileName, type: $type, deal: $deal, file: $file) 
+}
